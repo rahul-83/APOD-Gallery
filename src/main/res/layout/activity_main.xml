@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.FloatingActionButtonLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fab_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    sothree:umanoFabMode="leave_behind"
+    tools:context="ca.jeffrey.apodgallery.MainActivity">
+
+    <!-- umanoOverlay allows for transparent background when panel is extended
+         umanoPanelHeight is the height of the panel when collapsed
+         umanoParallaxOffset is how much the top view moves up when panel is extended -->
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@+id/sliding_panel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:gravity="bottom"
+        sothree:umanoFadeColor="@android:color/transparent"
+        sothree:umanoInitialState="collapsed"
+        sothree:umanoOverlay="true"
+        sothree:umanoPanelHeight="92dp"
+        sothree:umanoParallaxOffset="118dp"
+        sothree:umanoDragView="@+id/title"
+        sothree:umanoScrollableView="@+id/description_scroll"
+        sothree:umanoShadowHeight="0dp">
+
+        <!-- MAIN CONTENT -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimaryDark"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <RelativeLayout
+                android:id="@+id/main_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/date_nav"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/left_chevron"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:contentDescription="@string/desc_left_chevron"
+                        android:gravity="center"
+                        android:minHeight="26dp"
+                        android:minWidth="26dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/chevron_left"
+                        android:tint="@android:color/white"/>
+
+                    <ImageView
+                        android:id="@+id/right_chevron"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:contentDescription="@string/desc_right_chevron"
+                        android:gravity="center"
+                        android:minHeight="26dp"
+                        android:minWidth="26dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/chevron_right"
+                        android:tint="@android:color/white"/>
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_toLeftOf="@id/right_chevron"
+                        android:layout_toRightOf="@id/left_chevron"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="26sp"/>
+                </RelativeLayout>
+
+                <ca.jeffrey.apodgallery.image.BetterImageView
+                    android:id="@+id/image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/date_nav"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"/>
+
+                <ProgressBar
+                    android:id="@+id/progress"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:visibility="visible"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- SLIDING LAYOUT -->
+        <!-- layout_weight controls where sliding panel stops when extended -->
+        <LinearLayout
+            android:id="@+id/sliding_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparentPrimary"
+            android:orientation="vertical">
+
+            <!-- layout_height controls the height of entire TextView -->
+            <ca.jeffrey.apodgallery.text.AutoResizeTextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:ellipsize="none"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"/> <!-- maximum size -->
+
+            <ScrollView
+                android:id="@+id/description_scroll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="vertical">
+
+                <ca.jeffrey.apodgallery.text.TextViewEx
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingMultiplier="1.5"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+            </ScrollView>
+    </LinearLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|right"
+    android:layout_marginBottom="16dp"
+    android:layout_marginRight="16dp"
+    android:clickable="true"
+    android:src="@drawable/image_area"
+    android:tint="@android:color/white"
+    app:rippleColor="@color/colorPressed"/>
+
+</com.sothree.slidinguppanel.FloatingActionButtonLayout>

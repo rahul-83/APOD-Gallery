@@ -1,0 +1,86 @@
+<resources>
+    <string name="action_no">NO</string>
+    <string name="action_yes">YES</string>
+    <string name="api_key">vM9c9zaJtw4yhrAJvh7Bl2oCH5aDQkHyUMRwph5W</string>
+    <string name="app_name">APOD Gallery</string>
+
+    <string name="desc_image">Featured image</string>
+    <string name="desc_left_chevron">Navigate to previous date</string>
+    <string name="desc_right_chevron">Navigate to next date</string>
+
+    <string name="dialog_browser_desc">The featured content for %s is not an image. Do you want to view the content in an external application?</string>
+    <string name="dialog_browser_title">Open external link?</string>
+    <string name="dialog_ciphers_title">Updating Ciphers</string>
+    <string name="dialog_ciphers_body">Loading, please wait&#8230;</string>
+    <string name="dialog_gservices_title">Warning</string>
+    <string name="dialog_gservices_body">Please update Google Play Services in order to use APOD Gallery.</string>
+    <string name="dialog_wallpaper_title">Wallpaper Changer</string>
+    <string name="dialog_whats_new_title">What\'s new in\u0020</string>
+
+    <string name="error_auth">Authentication error.</string>
+    <string name="error_cache">Cache error, please free up some storage space.</string>
+    <string name="error_general">Error.</string>
+    <string name="error_network">Network error, please check your Internet connection.</string>
+    <string name="error_parse">Parsing error.</string>
+    <string name="error_saving">Error saving file. Please check your image save directory.</string>
+    <string name="error_server">Server error, unable to retrieve content. Please try again later.</string>
+    <string name="error_today">Image is not available yet. Please check again later.</string>
+
+    <string name="label_dismiss">Dismiss</string>
+    <string name="label_ignore">Ignore</string>
+    <string name="label_not_now">Not now</string>
+    <string name="label_retry">Retry</string>
+    <string name="label_review">Review App</string>
+    <string name="label_settings">Settings</string>
+
+    <string name="menu_browser">Open in browser</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_save">Save to device</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_share">Share</string>
+    <string name="name_developer">JeffreyCA</string>
+    <string name="name_email">jeffreyca16@gmail.com</string>
+    <string name="placeholder_widget">No images found</string>
+
+    <string name="pref_about">About</string>
+    <string name="pref_cache">Clear app cache</string>
+    <string name="pref_changelog">See latest changes</string>
+    <string name="pref_developer">Developer</string>
+    <string name="pref_enable_daily_wallpaper">Daily wallpaper changer</string>
+    <string name="pref_general">General</string>
+    <string name="pref_image_credits">Display image credits</string>
+    <string name="pref_image_quality">Image save quality</string>
+    <string name="pref_reset_task">Restart daily wallpaper task</string>
+    <string name="pref_save_location">Image save location</string>
+    <string name="pref_storage">Storage</string>
+    <string name="pref_summary_wallpaper">A daily service that automatically updates your launcher wallpaper to the latest APOD image, skipping days with non-image content. Retrieves data when Internet connection is available.</string>
+    <string name="pref_summary_cache">Saved images will not be deleted</string>
+    <string name="pref_summary_credits">Third-party resources used in making this app</string>
+    <string name="pref_summary_image_credits">Show photo credits below image description if available</string>
+    <string name="pref_summary_image_quality">Images can be saved at higher qualities on the device\nAPOD only loads standard-definition images to screen</string>
+    <string name="pref_summary_reset_task">Re-initiate the daily wallpaper changer task</string>
+    <string name="pref_version">App Version</string>
+    <string name="pref_wallpaper">Wallpaper</string>
+
+    <string name="title_credits">Credits:\u0020</string>
+    <string name="title_activity_credits">Acknowledgements</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_widget_config">Widget Configuration</string>
+    <string name="title_changelog">Changelog</string>
+    <string name="title_intent_share">Share image</string>
+    <string name="title_intent_share_link">Share link</string>
+    <string name="title_intent_wallpaper">Set as</string>
+    <string name="title_text_image_unavailable">Image Unavailable</string>
+
+    <string name="toast_clear_cache">Cleared app cache</string>
+    <string name="toast_fab">Set image as wallpaper</string>
+    <string name="toast_no_image">Image not available</string>
+    <string name="toast_permission_granted">Permission granted, please retry your previous action</string>
+    <string name="toast_save_image">Image saved to </string>
+    <string name="toast_storage">Please enable storage permissions to complete this action</string>
+    <string name="toast_view_external">Tap to view in external application</string>
+    <string name="toast_view_image">Tap image to view in fullscreen</string>
+    <string name="toast_start_task">Wallpaper changer enabled</string>
+    <string name="toast_reset_task">Wallpaper changer restarted</string>
+    <string name="toast_stop_task">Wallpaper changer disabled</string>
+</resources>

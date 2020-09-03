@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="change_latest">
+        <b>Changes</b>\n
+        - Improve scrolling through description text\n
+        - Improve compatibility with Android P
+    </string>
+    <string name="change_2_0_14">
+        <b>Updates</b>\n
+        - Update crash logging tool\n
+        - Improvements to first-time launch\n
+        - Improvements to wallpaper changer
+    </string>
+    <string name="change_2_0_13">
+        <b>Fixes</b>\n
+        - Fix crashes when viewing certain non-image content\n
+        - Prevent multiple dialogs from showing\n
+        - Prevent other dialogs from showing on top of "What's New" dialog
+    </string>
+    <string name="change_2_0_12">
+        <b>Updates</b>\n
+        - Update libraries\n
+        - Improve daily wallpaper changer\n
+    </string>
+    <string name="change_2_0_11">
+        <b>Fixes</b>\n
+        - Fix problems adding widgets on Android 4.x devices\n\n
+        <b>Updates</b>\n
+        - Update Android libraries (improved compatibility)\n\n
+        APOD Gallery is no longer in active development. You will see fewer updates, however I will continue to fix any bugs or crashes that arise. Thank you!\n
+    </string>
+    <string name="change_2_0_10">
+        <b>Fixes</b>\n
+        - Fix rare crash during permissions request dialog\n\n
+        <b>Changes</b>\n
+        - Add Android O support\n\n
+        Please report any bugs you encounter.\n
+    </string>
+    <string name="change_2_0_9">
+        <b>Changes</b>\n
+        - Update support libraries\n
+    </string>
+    <string name="change_2_0_8">
+        <b>Changes</b>\n
+        - Improve compatibility for older devices\n
+        - Add clearer error messages\n
+        - Change default save directory to use device-specific external storage path\n
+        <b>Fixes</b>\n
+        - Fix crash when tapping widget\n
+    </string>
+    <string name="change_2_0_7">
+        <b>Improvements</b>\n
+        - Update support libraries\n
+    </string>
+    <string name="change_2_0_6">
+        <b>Fixes</b>\n
+        - Fix app widget where pictures were not being retrieved properly\n
+    </string>
+    <string name="change_2_0_5">
+        <b>Changes</b>\n
+        - Automatically restart daily wallpaper changer (if enabled) after each app update\n\n
+        <b>Fixes</b>\n
+        - Wallpaper was not changing for some users, should be working now!\n
+    </string>
+    <string name="change_2_0_4">
+        <b>Fixes</b>\n
+        - Fix SSL bug where older devices (pre-Lollipop) could not retrieve images from NASA\'s servers\n
+        - Improve how wallpapers are downloaded for the daily wallpaper changer\n
+    </string>
+    <string name="change_2_0_2"><b>Attention widget users</b>\n
+        It is highly recommended that you remove and re-add the APOD Gallery widget as some new bug fixes have been implemented.\n\n
+        <b>Changes</b>\n
+        <i>Widget</i> - Max image limit capped at 20\n
+        <i>Widget</i> - Default limit set to 10\n
+        <i>Widget</i> - Every time you save a new image in APOD Gallery, all the app widgets will be automatically updated (max image limit will be respected)\n\n
+
+        <b>Fixes</b>\n
+        <i>Widget</i> - Fix crash due to lack of Storage permission\n\n
+
+        If you see a <b>"No images found"</b> message on the widget, either there are no images saved in your save folder, or you do not have Storage permissions enabled for <b>APOD Gallery</b>.\n
+    </string>
+
+    <string name="change_2_0_1">
+        <b>Fixes</b>\n
+        • <i>General</i> - Fix bug where description text sometimes would get cut off\n
+        • <i>General</i> - Fix logging errors\n
+        • <i>Widget</i> - Correctly retrieves images from save directory\n
+    </string>
+
+    <string name="change_2_0_0">
+        <b><i>Daily wallpaper changer</i></b>\n\n
+        Daily wallpapers were the most requested feature, now they\'re finally here! The next screen will tell you more about the feature. It is disabled by default.
+        If you encounter any unexpected behaviour, please email me.\n\n
+
+        <b><i>Launcher widget</i></b>\n\n
+        • A launcher widget for <b>APOD Gallery</b> has been implemented.\n
+        • Swipe through all of the images you\'ve saved from <b>APOD Gallery</b>.\n
+        • Tap on a particular image in the widget to open the app to the corresponding date.\n\n
+
+        <b>Other additions</b>\n\n
+        • Add new changelog dialog (this thing)\n
+        • Landscape support for all devices\n\n
+
+        <b>Fixes</b>\n\n
+        • Fix HTTPS issue on older devices and reinstate support for pre-Lollipop devices\n
+        • Display proper images titles for dates before 1998\n
+        • Adjust toolbar text colours on older devices\n
+        • Update libraries\n
+        • Improve timeout handling\n
+        • Improve permission management for devices on Marshmallow and above\n
+        • Improve rendering of image description\n\n
+
+        I take each reviews and suggestion into consideration. If you haven\'t yet, I encourage you to leave a review in the Play Store.
+    </string>
+
+    <string name="wallpaper_summary">The service checks if a new image is available every day and set the current day\'s featured image as your phone\'s wallpaper.\n\n
+        It will automatically run on boot. The wallpaper is not changed if the current day\'s featured content is not a picture.\n\n
+
+        <b>Warning</b>: This may use your mobile data connection. Images are usually less than 1 megabyte.\n
+        <b>Warning</b>: Task killers and memory management apps may conflict with the wallpaper changer task. I suggest whitelisting <b>APOD Gallery</b> if you want to enable this feature.\n
+    </string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_image_quality">
+        <item>Standard-definition</item>
+        <item>High-definition</item>
+    </string-array>
+
+    <string-array name="list_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+</resources>
